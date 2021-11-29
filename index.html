@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css">
+</head>
+<body>
+    <div class="space">
+    <div class="planet-area">
+        <img src="mars.png" height="600" width="600"
+             alt="planet"
+             class="planet"/>
+        <img src="rocket.png" height="212" width="212"
+             alt="rocket"
+             class="rocket"
+             id = "rocket"/>
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <input type="password"
+                   id="pwd"
+                   name="pwd" minlength="8"
+                   placeholder="Enter password to launch">
+            <input type="button" value="OK" id="OkButton">
+            <div class="check-buttons">
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+            </div>
+            <div class="levers">
+                <input type="range" min="0" max="11" value="7" step="1" disabled>
+                <input type="range" min="0" max="11" value="7" step="1" disabled>
+                <input type="range" min="0" max="11" value="7" step="1" disabled>
+                <input type="range" min="0" max="11" value="7" step="1" disabled>
+                <input type="range" min="0" max="11" value="7" step="1" disabled>
+            </div>
+            <input type="button" value="Launch" id="launchButton" disabled>
+        </div>
+    </div>
+</div>
+<script src="myscripts.js"></script>
+</body>
+</html>
